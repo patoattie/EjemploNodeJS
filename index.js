@@ -3,7 +3,7 @@ const app = express();
 
 // Middleware -> Agrego el atributo fechaSistema al request
 app.use((req, res, next) => {
-    req.fechaSistema = new Date().toLocaleString();
+    req.fechaSistema = new Date().toLocaleString('es-AR');
     next();
 });
 
